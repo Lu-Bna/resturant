@@ -1,0 +1,338 @@
+
+/* .......common css....... */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1250px;
+    margin: 0 auto;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+}
+h1{
+    font-family: 'Yeseva One', cursive;
+    font-size: 90px;
+    color: white;
+}
+h2{
+    font-family: 'Yeseva One', cursive;
+    font-size: 36px;
+}
+h4{
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 21px;
+}
+h5{
+    font-family: 'Yeseva One', cursive;
+    font-size: 20px;
+}
+h6{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color:#ffff;
+}
+
+
+
+
+/* .........header.... */
+.body{
+    position: relative;
+}
+header{
+      padding: 0 auto;
+      position: fixed;
+      width: 100%;
+
+}
+  header .container{
+    display: flex;
+    justify-content: space-between;
+}
+header nav{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding-top: 50px;
+}
+header nav h4{
+    position: relative;
+    color:rgb(255, 255, 255) ;
+}
+header nav h4::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: rgb(255, 255, 255);
+    left: 0;
+    top: -50px;
+    border-radius: 1px;
+    transition: all 0.2s linear;
+    
+
+}header nav h4:hover:after{
+    width: 100%;
+}
+
+
+
+
+
+/* ..............banner.......... */
+.banner{
+    background-image: url(Images/bg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.banner h1{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 240px;
+    width: 970px;
+    
+}
+.banner img{
+    padding: 30px 0;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 140px;
+
+}
+.button{
+    padding: 20px 50px;
+    background-color: rgba(255, 255, 255, 0.285);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+.button:hover{
+    background-color: rgba(0, 0, 0, 0.518);
+    color: white;
+    border: 1px solid black;
+}
+
+
+
+/* ...............about............... */
+.about{
+    background-image: url(Images/bg2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 70px;
+}
+.about .container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.about .container p{
+    width:420px ;
+    padding: 30px 0 50px 0;
+}
+.about h2{
+    color: #d09500;
+    padding: 30px 0 10px 0;
+}
+
+
+
+
+
+/* ..................ingredient........ */
+.ingredients{
+    background-image: url(Images/bg3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px;
+}
+.ingredients .box{
+    background-color: rgba(0, 0, 0, 0.41);
+    padding: 80px;
+    align-content: center;
+    width: 570px;
+    margin-left: 640px;
+}
+.ingredients .box h2{
+    color: white;
+    padding-bottom: 10px;
+
+}
+.ingredients p{
+     width: 420px;
+    color: rgb(200, 200, 200);
+    padding:25px 0 70px 0 ;
+}
+.pics{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+
+/* .............menu.......... */
+.menu{
+    background-image: url(Images/bg4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.menu .container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 1050px;
+    padding: 0 auto;
+    align-items: center;
+    padding: 50px 0 100px 0;
+    
+}
+.menu h2{
+    color: #efb41f;
+   
+}
+.menu h5{
+    padding: 10px 0;
+    color: #d3a42e;
+}
+.menu p{
+    padding-top: 10px;
+    color: black;
+    text-align: left;
+}
+.menu .box{
+  width: 430px; 
+  padding-top: 50px;
+}
+.menu .iteam{
+
+    display: flex;
+    justify-content:space-between;
+    border-bottom: 1px solid #ddb85a;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+
+
+
+
+
+/* .........review..... */
+.review {
+    background-image: url(Images/bg5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px;
+    
+}
+.review .box{
+    background-color: rgba(0, 0, 0, 0.603);
+    align-items: center;
+    width: 760px;
+    padding: 80px 0 100px 0;
+    margin: 0 auto;
+    
+}
+.review .box h2{
+    color: white;
+  
+}
+
+
+
+
+
+/* ......form.... */
+.fill{
+    background-image: url(Images/bg2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px;
+}
+.fill .container{
+    display: flex;
+    gap: 30px;
+    padding: 100px 0;
+}
+.fill .container .box{
+    width: 430px;
+    margin-left: 70px;
+    text-align: center;
+    
+
+}
+.fill .container h2{
+    color: #d09500;
+    padding-bottom: 20px;
+
+}
+.fill .container .p{
+    color: black;
+    padding: 30px 0 40px 0;
+}
+.fill .form {
+    justify-content:space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    
+}
+.fill .form p{
+    color: #d09500;
+    text-align: left;
+   
+}
+.fill .form input,
+.fill .form select{
+    width: 200px;
+    height: 30px;
+    padding-left: 10px;
+
+}
+.fill .form input:hover{
+    border: 1px solid #d09500;
+}
+button{
+    margin: 0 auto;
+    padding:10px 60px ;
+    color: #d09500;
+    border: 1px solid #d09500;
+    background-color: white;
+
+}
+
+
+
+
+
+/* .........footer.... */
+ .footer{
+    height: 400px;
+    background-color: black;
+ }
